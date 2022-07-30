@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assetstravel/style.travel.css">
+    <link rel="stylesheet" href="assetstravel/style.norm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            align-self: center;
+            padding: 42px 32px;
+            gap: 65px;
+
+
+            width: 1440px;
+            height: 2385px;
+
+            background: #FFFFFF;
+        }
+
+        .navbar {
+            display: flex;
+            list-style: none;
+            /*убираем маркеры списка*/
+            flex-direction: row;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            display: flex;
+
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 22px;
+
+            width: 1028px;
+            height: 48px;
+
+        }
+
+        .menu_link {
+            /*убираем подчеркивание текста ссылок*/
+            text-decoration: none;
+            /* text decoration */
+            width: 83px;
+            height: 28px;
+
+            /* Body 18px */
+
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* identical to box height, or 156% */
+
+
+            /* Black 50 */
+
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .maincontainer {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 65px;
+
+            width: 1376px;
+            height: 1935px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 2;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        header {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            gap: 14px;
+
+            width: 1028px;
+            height: 318px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        h1 {
+            /* Discover Beauty around the world */
+
+
+            width: 924px;
+            height: 220px;
+
+            /* Header 80px */
+
+            font-family: 'Open Sans Hebrew';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 110px;
+            /* or 138% */
+
+            text-align: center;
+
+            /* Black */
+
+            color: #000000;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .header_p {
+            width: 1028px;
+            height: 84px;
+
+            /* Body 18px */
+
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+
+            text-align: center;
+
+            /* Black 50 */
+
+            color: rgba(0, 0, 0, 0.5);
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        .geotype {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 24px;
+
+            width: 1028px;
+            height: 328px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        h2 {
+            width: 347px;
+            height: 54px;
+
+            /* Subtitle 20px */
+
+            font-family: 'Open Sans Hebrew';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 54px;
+
+            /* Black */
+
+            color: #000000;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .frame {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 121px;
+
+            width: 1028px;
+            height: 250px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .frame2 {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 121px;
+
+            width: 1028px;
+            height: 250px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .frame3 {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 16px;
+
+            width: 499px;
+            height: 249px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .hilpic {
+            width: 405px;
+            height: 250px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            border-radius: 8px;
+        }
+
+        h3 {
+            width: 53px;
+            height: 33px;
+
+            /* SubHeader 24px */
+
+            font-family: 'Open Sans Hebrew';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            /* identical to box height */
+
+
+            /* Black */
+
+            color: #000000;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .hills {
+            width: 499px;
+            height: 140px;
+
+            /* Body 18px */
+
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+
+
+            /* Black 50 */
+
+            color: rgba(0, 0, 0, 0.5);
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        button {
+            box-sizing: border-box;
+
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 8px 30px;
+            gap: 10px;
+
+            width: 154px;
+            height: 44px;
+
+            /* Black */
+
+            border: 1px solid #000000;
+            border-radius: 4px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
+
+        .gallery {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 16px;
+
+            width: 1028px;
+            height: 539px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+        }
+
+        .frame4 {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0px;
+            gap: 75px;
+
+            width: 1028px;
+            height: 490px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        .galcontent {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 42px;
+
+            width: 401px;
+            height: 462px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .galpic {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 24px;
+
+            width: 552px;
+            height: 490px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .hills1 {
+            /* Body 18px */
+
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+
+
+            /* Black 50 */
+
+            color: rgba(0, 0, 0, 0.5);
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        .hills2 {
+            width: 401px;
+            height: 280px;
+
+            /* Body 18px */
+
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+
+
+            /* Black 50 */
+
+            color: rgba(0, 0, 0, 0.5);
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+
+        .gal1 {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+
+            width: 264px;
+            height: 490px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 1;
+        }
+
+        .gal2 {
+            /* Auto layout */
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 24px;
+
+            width: 264px;
+            height: 490px;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navcontainer">
+        <ul class="navbar">
+            <li> <a href="" class="menu_link">Vocano</a></li>
+            <li> <a href="" class="menu_link">Peninsula</a></li>
+            <li> <a href="" class="menu_link">Desert</a></li>
+            <li> <a href="" class="menu_link">Mountain</a></li>
+            <li> <a href="" class="menu_link">Canyon</a></li>
+            <li> <a href="" class="menu_link">Hil</a></li>
+            <li> <a href="" class="menu_link">Bay</a></li>
+        </ul>
+
+    </nav>
+    <svg class="line" width="1376" height="2" viewBox="0 0 1376 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1L1376 1.00012" stroke="black" stroke-opacity="0.2" />
+    </svg>
+    <main class="maincontainer">
+        <header>
+            <h1>Discover Beauty around the world</h1>
+            <p class="header_p">As far as we know, our world is unique in
+                the universe, defined by three elements,
+                Air, Land and Water. Each element has its
+                own special properties and phenomena and is
+                home to myriad lifeforms that have infiltrated
+                every habitat, from the deepest oceans to the
+                tiniest nooks and crannies.</p>
+        </header>
+
+        <section class="geotype">
+            <h2>Geographical Type</h2>
+            <div class="frame">
+                <div class="frame2">
+                    <div class="frame3">
+                        <h3>Hills</h3>
+                        <p class="hills">Hills may form through geomorphic
+                            phenomena: faulting, erosion of larger
+                            landforms such as mountains and movement and
+                            deposition of sediment by glaciers (notably moraines
+                            and drumlins or by erosion exposing solid rock which then
+                            weathers down into a hill). </p>
+                        <div class="butt">
+                            <button>
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <img class="hilpic" src="assetstravel/image2.png" alt="hills">
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <h4>Gallery</h4>
+            <div class="frame4">
+                <div class="galpic">
+                    <div class="gal1">
+                        <img src="assetstravel/hills1.png" alt="">
+                    </div>
+                    <div class="gal2">
+                        <img src="assetstravel/hills2.png" alt="">
+                        <img src="assetstravel/hills3.png" alt="">
+                    </div>
+                </div>
+                <div class="galcontent">
+                    <p class="hills1">Hills are landforms that rise above the surrounding terrain and
+                        have relatively confined summits but are generally understood to
+                        be smaller than mountains. There is no formal distinction between the two.</p>
+                    <p class="hills2">Hills may form through geomorphic phenomena: faulting, erosion of larger landforms
+                        such as mountains and movement and deposition of sediment by glaciers (notably
+                        moraines and drumlins or by erosion exposing solid rock which then weathers down
+                        into a hill). The rounded peaks of hills results from the diffusive movement of
+                        soil and regolith covering the hill, a process known as downhill creep.</p>
+                </div>
+            </div>
+        </section>
+
+        </header>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
